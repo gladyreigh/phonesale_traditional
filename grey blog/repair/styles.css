@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+main {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#notice {
+    background-color: #e8f5e9; /* Light green background for visibility */
+    color: #4CAF50; /* Darker green text for contrast */
+    padding: 1rem;
+    border-left: 5px solid #4CAF50; /* Bold left border for emphasis */
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for lift */
+}
+
+#contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* More pronounced shadow for depth */
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style for the button container */
+#buttonContainer {
+    display: flex;
+    justify-content: space-between; /* Space out buttons */
+}
+
+/* Specific style for the back button */
+#backButton {
+    background-color: #4CAF50; /* Same color as theme */
+}
+
+#backButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Specific style for the submit button */
+button[type="submit"] {
+    background-color: #4CAF50; /* Same color as theme */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

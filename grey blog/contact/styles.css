@@ -1,0 +1,128 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50; /* Green background */
+    color: #ffffff;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #333; /* Dark background */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #555; /* Darker on hover */
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #4CAF50; /* Green text */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-item h3 {
+    color: #4CAF50; /* Green text */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.contact-item a {
+    color: #4CAF50; /* Green link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .contact-item {
+        padding: 15px;
+    }
+
+    .contact-item h3 {
+        font-size: 1.5em;
+    }
+
+    .contact-item p {
+        font-size: 1em;
+    }
+}
