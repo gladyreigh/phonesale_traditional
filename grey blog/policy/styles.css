@@ -1,0 +1,194 @@
+/* General styles for the entire page */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Sets a modern, clean font for the entire page */
+  line-height: 1.6; /* Improves readability by increasing line height */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  background-color: #f4f4f4; /* Light grey background color for the whole page */
+  color: #333; /* Dark grey text color for better readability */
+}
+
+/* Styles for the header section */
+header {
+  background-color: #4CAF50; /* Sets a green background color for the header */
+  color: white; /* Sets the text color to white */
+  text-align: center; /* Centers the text in the header */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  margin-top: -21px; /* Moves the header up slightly, possibly to overlap with another element */
+}
+
+.header-content h1 {
+  margin: 1rem 0; /* Adds vertical margin to space out the heading */
+  font-size: 2rem; /* Sets the font size of the heading */
+  padding-top: 10px; /* Adds padding at the top of the heading */
+}
+
+/* Navigation styles within the header */
+header nav ul {
+  list-style: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  display: flex; /* Uses flexbox to align items horizontally */
+  justify-content: center; /* Centers the navigation links */
+}
+
+header nav ul li {
+  margin: 0 1rem; /* Adds horizontal margin between navigation items */
+}
+
+header nav ul li a {
+  color: white; /* Sets the link text color to white */
+  text-decoration: none; /* Removes underlines from links */
+  font-weight: 600; /* Makes the text slightly bolder */
+  padding: 1rem; /* Adds padding around the link text */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+header nav ul li a:hover {
+  color: #333; /* Changes the link color on hover for better visibility */
+}
+
+/* Styles for the main content area */
+main {
+  padding: 3rem; /* Adds padding around the main content */
+  max-width: 800px; /* Limits the maximum width of the main content */
+  margin: 0 auto; /* Centers the main content horizontally */
+  background: white; /* Sets a white background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  border-radius: 10px; /* Rounds the corners of the main content area */
+}
+
+main section {
+  margin-bottom: 2rem; /* Adds space below each section */
+}
+
+main section h2 {
+  border-bottom: 2px solid #4CAF50; /* Adds a green border below the section heading */
+  padding-bottom: 0.5rem; /* Adds padding below the heading text */
+  margin-bottom: 1rem; /* Adds space below the heading */
+  font-size: 1.5rem; /* Sets the font size for section headings */
+  font-weight: 700; /* Makes the section headings bold */
+  color: #4CAF50; /* Sets the section heading color to green */
+}
+
+main section p {
+  font-size: 1rem; /* Sets the font size for paragraph text */
+  margin-bottom: 1rem; /* Adds space below paragraphs */
+  color: #555; /* Sets a slightly lighter text color for readability */
+  line-height: 1.8; /* Increases line height for better readability */
+}
+
+/* Responsive styles for screens 768px wide or less */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column; /* Stacks navigation items vertically */
+    text-align: center; /* Centers the navigation items */
+  }
+
+  header nav ul li {
+    margin: 0.5rem 0; /* Reduces margin between navigation items */
+  }
+}
+
+/* Styles for the hamburger menu */
+.hidden {
+    display: none; /* Hides elements with the 'hidden' class */
+}
+
+nav .fas {
+    display: none; /* Hides FontAwesome icons by default */
+}
+
+nav ul {
+    display: flex; /* Displays navigation items in a row */
+    align-items: center; /* Vertically aligns items */
+    justify-content: center; /* Centers items horizontally */
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+}
+
+.hamburger {
+    display: block; /* Shows the hamburger icon */
+}
+
+/* Styles specific to screens 600px wide or less */
+@media only screen and (max-width: 600px) {
+    nav .fas.fa-bars {
+        display: block; /* Shows the hamburger icon */
+        font-size: 25px; /* Sets the font size of the icon */
+        color: white; /* Sets the icon color to white */
+        position: fixed; /* Fixes the position of the icon */
+        right: 5px; /* Positions the icon 5px from the right edge */
+        top: 10px; /* Positions the icon 10px from the top edge */
+        cursor: pointer; /* Changes the cursor to a pointer on hover */
+        z-index: 2; /* Places the icon above other elements */
+        margin-top: 5px; /* Adds a small top margin */
+    }
+
+    nav .fas.fa-times {
+        display: none; /* Hides the close icon by default */
+        font-size: 25px; /* Sets the font size of the close icon */
+        color: white; /* Sets the icon color to white */
+        position: fixed; /* Fixes the position of the icon */
+        right: 5px; /* Positions the icon 5px from the right edge */
+        top: 10px; /* Positions the icon 10px from the top edge */
+        cursor: pointer; /* Changes the cursor to a pointer on hover */
+        z-index: 2; /* Places the icon above other elements */
+        margin-top: 5px; /* Adds a small top margin */
+    }
+
+    nav ul {
+        background: rgba(76, 175, 80, 0.9); /* Semi-transparent green background for the mobile menu */
+        position: fixed; /* Fixes the position of the menu */
+        top: 0px; /* Positions the menu at the top of the viewport */
+        right: -250px; /* Initially hides the menu off-screen */
+        width: 200px; /* Sets the width of the menu */
+        padding-top: 40px; /* Adds padding at the top of the menu */
+        flex-direction: column; /* Stacks menu items vertically */
+        align-items: flex-start; /* Aligns items to the start of the menu */
+        transition: 0.5s; /* Smooth transition for the menu slide-in effect */
+        z-index: 1; /* Places the menu below the close icon */
+    }
+
+    nav ul li {
+        display: block; /* Displays menu items as block elements */
+        margin: 25px; /* Adds margin around each menu item */
+        font-family: 'Poppins'; /* Sets a specific font for menu items */
+        padding-top: 40px; /* Adds padding at the top of each menu item */
+    }
+
+    nav ul li.close-icon {
+        position: absolute; /* Positions the close icon absolutely within the menu */
+        top: 20px; /* Positions the close icon 20px from the top edge */
+        left: 20px; /* Positions the close icon 20px from the left edge */
+        display: none; /* Hides the close icon by default */
+        cursor: pointer; /* Changes the cursor to a pointer on hover */
+        z-index: 3; /* Places the close icon above the menu */
+    }
+}
+
+/* Styles for screens 601px wide or more */
+@media only screen and (min-width: 601px) {
+    nav ul {
+        flex-direction: row; /* Aligns navigation items in a row */
+    }
+}
+
+/* Styles for the back buttons */
+#back-button, #back-buttons {
+    background-color: #4CAF50; /* Sets a green background color */
+    color: white; /* Sets the text color to white */
+    padding: 10px 20px; /* Adds padding inside the button */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    font-size: 1rem; /* Sets the font size of the button text */
+    margin-bottom: 20px; /* Adds space below the button */
+    display: block; /* Ensures the button is a block element */
+    margin-left: auto; /* Centers the button horizontally */
+    margin-right: auto; /* Centers the button horizontally */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+#back-button:hover, #back-buttons:hover {
+    background-color: #45a049; /* Darker green background on hover */
+}

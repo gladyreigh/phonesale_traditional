@@ -1,0 +1,854 @@
+/* Container style for the logo header */
+.logo-header {
+    display: flex; /* Applies flexbox layout to the container */
+    align-items: center; /* Vertically centers items (logo) within the container */
+    justify-content: center; /* Horizontally centers items (logo) within the container */
+    padding: 15px; /* Adds padding around the logo for spacing */
+    margin: 10px; /* Adds a small margin outside the container */
+    max-height: 90px; /* Restricts the maximum height of the logo container */
+}
+
+.logo-header img {
+    max-height: 100%; /* Ensures the image height fits within the parent container */
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+
+/* Style for the logo */
+.logo {
+    max-width: 300px; /* Limits the logo's maximum width */
+    height: auto; /* Maintains aspect ratio regardless of resizing */
+    margin: 0; /* Removes any default margin to ensure proper alignment */
+}
+
+/* Center align header content */
+header {
+    text-align: center; /* Centers the text content inside the header */
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif; /* Applies the primary font for the page */
+    margin: 0; /* Removes default margin around the body */
+    padding: 0; /* Removes default padding around the body */
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+    background-color: #f4f4f4; /* Sets a light gray background color */
+}
+
+header {
+    background-color: #4CAF50; /* Sets a green background for the header */
+    color: white; /* Sets text color to white for contrast */
+    padding: 1rem 0; /* Adds padding to the top and bottom of the header */
+    text-align: center; /* Centers the text within the header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow below the header for depth */
+    position: relative; /* Makes the header's position relative for future positioning context */
+}
+
+header h1 {
+    margin: 0; /* Removes default margin for the h1 heading */
+    font-size: 2.5rem; /* Sets the font size of the heading */
+    font-weight: bold; /* Makes the heading text bold */
+}
+
+/* Line between header and navigation */
+.header-line {
+    border: none; /* Removes default border styles */
+    border-top: 1px solid #ddd; /* Adds a thin top border to separate header and navigation */
+    margin: 0 auto; /* Centers the line horizontally */
+    width: 80%; /* Sets the width of the line */
+}
+
+nav ul {
+    list-style: none; /* Removes default list styling (bullets) */
+    padding: 0; /* Removes padding from the list */
+    margin: 1rem 0; /* Adds margin above and below the list */
+    text-align: center; /* Centers the navigation list */
+}
+
+nav ul li {
+    display: inline; /* Displays the list items in a horizontal line */
+    margin: 0 1.5rem; /* Adds horizontal spacing between navigation items */
+    text-align: center; /* Ensures the text is centered within each list item */
+}
+
+nav ul li a {
+    color: white; /* Sets link text color to white */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Makes the link text bold */
+    font-size: 1.2rem; /* Sets the font size of the links */
+    transition: color 0.3s ease; /* Smooth transition effect when changing link color */
+}
+
+nav ul li a:hover {
+    color: #333; /* Changes link color to dark gray on hover */
+}
+
+main {
+    padding: 2rem; /* Adds padding around the main content area */
+}
+
+/* Styling for a highlighted quote within the header */
+.header-quote {
+    background-color: white; /* Sets a white background for the quote container */
+    padding: 1px; /* Adds minimal padding around the quote */
+    border-left: 5px solid #4CAF50; /* Adds a green border to the left of the quote */
+}
+
+.header-quote p {
+    font-family: 'Georgia', serif; /* Uses a serif font for the quote */
+    font-style: italic; /* Italicizes the text */
+    font-size: 19px; /* Sets the font size of the quote */
+    color: #333; /* Sets the text color to dark gray */
+    margin: 0; /* Removes default margin around the paragraph */
+    padding-left: 10px; /* Adds spacing between the text and the left border */
+}
+
+/* Responsive styling for screens smaller than 600px wide */
+@media only screen and (max-width: 600px) {
+    
+    /* Adjusting header height for smaller screens */
+    header {
+        height: 25px;
+    }
+
+    /* Resizing the logo for smaller screens */
+    .logo {
+        max-width: 100px; /* Reduces the logo width */
+        margin-top: -63px; /* Adjusts logo positioning */
+        height: auto; /* Maintains the aspect ratio */
+        margin-left: 0px; /* Ensures the logo is properly aligned */
+    }
+    
+    .header-quote {
+        margin-top: -47px; /* Adjusts the position of the quote */
+        background-color: white; /* Keeps the quote background white */
+        margin-left: -5px; /* Adjusts quote positioning */
+    }
+
+    .header-quote p {
+        font-size: 16px; /* Reduces font size for smaller screens */
+        padding-left: 0px; /* Removes padding for a tighter layout */
+    }
+    
+    .header-line {
+        display: none; /* Hides the line separator on small screens */
+    }
+}
+
+/* Add your other styles for products, cart, checkout form, etc. below */
+
+/* Search Bar Styles */
+.search-container {
+    display: flex; /* Applies flexbox layout to the search container */
+    justify-content: center; /* Centers the search bar horizontally */
+    align-items: center; /* Aligns search bar vertically in the middle */
+    margin-bottom: 2rem; /* Adds margin below the search bar */
+    width: 100%; /* Sets the container width to full */
+    max-width: 500px; /* Limits the container width */
+    margin-left: auto; /* Centers the container horizontally */
+    margin-right: auto; /* Centers the container horizontally */
+    position: relative; /* Allows for absolute positioning of the search icon */
+}
+
+#search-bar {
+    width: 70%; /* Sets the width of the search input */
+    padding: 0.75rem 2.5rem 0.75rem 0.75rem; /* Adds padding around the input, making space for an icon */
+    border: 1px solid #ddd; /* Adds a light gray border */
+    border-radius: 5px; /* Rounds the corners of the input */
+    font-size: 1rem; /* Sets the font size inside the input */
+    box-sizing: border-box; /* Ensures padding is included in the element's width and height */
+    margin-bottom: 10px; /* Adds spacing below the search bar */
+}
+
+#search-bar:focus {
+    outline: none; /* Removes the default focus outline */
+    border-color: #4CAF50; /* Changes the border color to green on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Adds a subtle green shadow around the input */
+}
+
+/* Optional: Adding a search icon inside the input field */
+.search-container::before {
+    content: '\f002'; /* Inserts a Font Awesome search icon */
+    font-family: 'Font Awesome 5 Free'; /* Specifies the Font Awesome family */
+    font-weight: 900; /* Uses the solid version of the icon */
+    position: absolute; /* Positions the icon absolutely within the container */
+    right: 10px; /* Positions the icon on the right */
+    color: #aaa; /* Sets the icon color to light gray */
+    font-size: 1rem; /* Sets the icon size */
+    pointer-events: none; /* Prevents the icon from interfering with input focus */
+}
+
+/* Responsive styling for screens smaller than 768px wide */
+@media (max-width: 768px) {
+    .search-container {
+        width: 90%; /* Increases the width of the search container on smaller screens */
+    }
+}
+
+/* Container for sorting options */
+.sort-container {
+    display: flex; /* Applies flexbox layout for sorting container */
+    justify-content: center; /* Centers the sort dropdown horizontally */
+    align-items: center; /* Aligns the dropdown vertically */
+    margin-bottom: 2rem; /* Adds margin below the sort container */
+    width: 100%; /* Sets container width to full */
+    max-width: 500px; /* Limits the container width */
+    margin-left: auto; /* Centers the container horizontally */
+    margin-right: auto; /* Centers the container horizontally */
+}
+
+/* Styling the sort dropdown */
+#sort-options {
+    width: 100%; /* Sets the dropdown width to full */
+    max-width: 180px; /* Limits the width of the dropdown */
+    padding: 0.75rem; /* Adds padding inside the dropdown */
+    border: 1px solid #ddd; /* Adds a light gray border */
+    border-radius: 5px; /* Rounds the corners of the dropdown */
+    font-size: 1rem; /* Sets the font size inside the dropdown */
+    box-sizing: border-box; /* Ensures padding is included in the element's width and height */
+    background-color: white; /* Sets the background color of the dropdown */
+    color: #333; /* Sets the text color */
+    cursor: pointer; /* Changes the cursor to pointer when hovering over the dropdown */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Adds smooth transition effects */
+    margin-bottom: 20px; /* Adds margin below the dropdown */
+}
+
+#sort-options:focus {
+    outline: none; /* Removes the default focus outline */
+    border-color: #4CAF50; /* Changes the border color to green on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Adds a subtle green shadow around the dropdown */
+}
+
+/* Styling the sort label */
+.sort-container label {
+    font-size: 1rem; /* Sets the label font size */
+    margin-right: 1rem; /* Adds spacing to the right of the label */
+    color: #333; /* Sets the text color to dark gray */
+    font-weight: bold; /* Makes the label text bold */
+}
+
+/* Product section styles */
+#products {
+    margin: 2rem 0; /* Adds vertical margin around the product section */
+    text-align: center; /* Centers the product section content */
+    margin-top: 0px; /* Removes additional top margin */
+}
+
+#products h2 {
+    font-size: 2rem; /* Sets the font size for the section heading */
+    margin-bottom: 1rem; /* Adds margin below the heading */
+    color: #333; /* Sets the text color to dark gray */
+}
+
+/* Styling for the product list */
+.product-list {
+    display: flex; /* Applies flexbox layout to the product list */
+    flex-wrap: wrap; /* Allows products to wrap to the next line */
+    justify-content: center; /* Centers the product items */
+    gap: 2rem; /* Adds space between product items */
+}
+
+/* Individual product card styles */
+.product {
+    background-color: white; /* Sets background color to white */
+    border: 1px solid #ddd; /* Adds a light gray border */
+    border-radius: 10px; /* Rounds the corners of the product card */
+    padding: 1rem; /* Adds padding inside the product card */
+    text-align: center; /* Centers the content within the product card */
+    width: calc(25% - 2rem); /* Sets the width of each product card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds smooth transition effects for hover state */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Moves the product card up slightly on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increases the shadow for a more pronounced effect */
+}
+
+.product img {
+    max-width: 100%; /* Ensures the product image fits within the card */
+    height: auto; /* Maintains the aspect ratio of the image */
+    border-bottom: 1px solid #ddd; /* Adds a border below the image */
+    padding-bottom: 1rem; /* Adds padding below the image */
+    margin-bottom: 1rem; /* Adds margin below the image */
+}
+
+.product h3 {
+    font-size: 1.25rem; /* Sets the font size for product titles */
+    margin: 0.5rem 0; /* Adds margin above and below the title */
+    color: #333; /* Sets the text color to dark gray */
+}
+
+.product p {
+    font-size: 1rem; /* Sets the font size for product descriptions */
+    color: #777; /* Sets the text color to light gray */
+}
+
+.product label {
+    display: block; /* Displays the label as a block element */
+    margin-top: 0.5rem; /* Adds margin above the label */
+}
+
+.product select {
+    margin-bottom: 1rem; /* Adds margin below the select dropdown */
+    padding: 0.5rem; /* Adds padding inside the dropdown */
+}
+
+/* Styles for product buttons */
+.product button {
+    background-color: #4CAF50; /* Sets the button background color to green */
+    color: white; /* Sets the button text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    padding: 0.75rem 1.5rem; /* Adds padding inside the button */
+    cursor: pointer; /* Changes the cursor to pointer when hovering over the button */
+    transition: background-color 0.3s ease; /* Adds smooth transition for background color change */
+}
+
+.product button:hover {
+    background-color: #45a049; /* Changes the button background color on hover */
+}
+
+/* Cart section styles */
+#cart {
+    margin: 2rem 0; /* Adds vertical margin around the cart section */
+    text-align: center; /* Centers the cart content */
+    background-color: white; /* Sets the background color to white */
+    border: 1px solid #ddd; /* Adds a light gray border */
+    border-radius: 10px; /* Rounds the corners of the cart container */
+    padding: 1rem; /* Adds padding inside the cart container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the cart container */
+}
+
+#cart h2 {
+    font-size: 2rem; /* Sets the font size for the cart heading */
+    margin-bottom: 1rem; /* Adds margin below the heading */
+    color: #333; /* Sets the text color to dark gray */
+}
+
+#cart-items {
+    margin-bottom: 1rem; /* Adds margin below the cart items section */
+}
+
+.cart-item {
+    display: flex; /* Applies flexbox layout to the cart item */
+    justify-content: space-between; /* Spreads out the items inside the cart item */
+    align-items: center; /* Aligns items vertically in the center */
+    border-bottom: 1px solid #ddd; /* Adds a border below each cart item */
+    padding: 0.5rem 0; /* Adds padding above and below the cart item */
+}
+
+.cart-item p {
+    margin: 0; /* Removes default margin from the paragraph */
+    font-size: 1rem; /* Sets the font size for cart item text */
+    color: #333; /* Sets the text color to dark gray */
+}
+
+.cart-item button {
+    background-color: #ff4d4d; /* Sets the button background color to red */
+    color: white; /* Sets the button text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    padding: 0.5rem 1rem; /* Adds padding inside the button */
+    cursor: pointer; /* Changes the cursor to pointer when hovering over the button */
+    transition: background-color 0.3s ease; /* Adds smooth transition for background color change */
+}
+
+.cart-item button:hover {
+    background-color: #e60000; /* Changes the button background color on hover */
+}
+
+#total {
+    font-size: 1.25rem; /* Sets the font size for the total amount */
+    color: #333; /* Sets the text color to dark gray */
+    margin: 1rem 0; /* Adds margin above and below the total amount */
+}
+
+#checkout {
+    background-color: #4CAF50; /* Sets the button background color to green */
+    color: white; /* Sets the button text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    padding: 1rem 2rem; /* Adds padding inside the button */
+    cursor: pointer; /* Changes the cursor to pointer when hovering over the button */
+    transition: background-color 0.3s ease; /* Adds smooth transition for background color change */
+}
+
+#checkout:hover {
+    background-color: #45a049; /* Changes the button background color on hover */
+}
+
+/* Checkout Form Styles */
+#checkout-form {
+    margin: 2rem 0; /* Adds vertical margin around the checkout form */
+    text-align: center; /* Centers the checkout form content */
+    background-color: white; /* Sets the background color to white */
+    border: 1px solid #ddd; /* Adds a light gray border */
+    border-radius: 10px; /* Rounds the corners of the form container */
+    padding: 1rem; /* Adds padding inside the form container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the form container */
+    width: 50%; /* Sets the form width to half of the parent container */
+    margin-left: auto; /* Centers the form horizontally */
+    margin-right: auto; /* Centers the form horizontally */
+}
+
+#checkout-form h2 {
+    font-size: 2rem; /* Sets the font size for the form heading */
+    margin-bottom: 1rem; /* Adds margin below the heading */
+    color: #333; /* Sets the text color to dark gray */
+}
+
+#checkoutForm {
+    max-width: 100%; /* Ensures the form width does not exceed its container */
+    margin-left: auto; /* Centers the form horizontally */
+    margin-right: auto; /* Centers the form horizontally */
+    text-align: left; /* Aligns the form content to the left */
+}
+
+#checkoutForm div {
+    margin-bottom: 1rem; /* Adds margin below each form group */
+}
+
+#checkoutForm label {
+    display: block; /* Displays the label as a block element */
+    margin-bottom: 0.5rem; /* Adds margin below the label */
+    color: #333; /* Sets the label text color to dark gray */
+    font-weight: bold; /* Makes the label text bold */
+}
+
+#checkoutForm input,
+#checkoutForm select {
+    width: 100%; /* Sets the input and select elements to take up the full width of the container */
+    padding: 0.75rem; /* Adds padding inside the input and select elements */
+    border: 1px solid #ddd; /* Adds a light gray border */
+    border-radius: 5px; /* Rounds the corners of the input and select elements */
+    box-sizing: border-box; /* Ensures padding is included in the element's width and height */
+    font-size: 1rem; /* Sets the font size of the input and select text */
+}
+
+#checkoutForm button {
+    background-color: #4CAF50; /* Sets the button background color to green */
+    color: white; /* Sets the button text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    padding: 1rem 2rem; /* Adds padding inside the button */
+    cursor: pointer; /* Changes the cursor to pointer when hovering over the button */
+    transition: background-color 0.3s ease; /* Adds smooth transition for background color change */
+    font-size: 1rem; /* Sets the font size of the button text */
+    display: block; /* Displays the button as a block element */
+    margin: 1rem auto 0; /* Adds margin to center the button horizontally and space it from other elements */
+}
+
+#checkoutForm button:hover {
+    background-color: #45a049; /* Changes the button background color on hover */
+}
+
+#back-to-cart {
+    background-color: #f44336; /* Sets the button background color to red */
+    color: white; /* Sets the button text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    padding: 1rem 2rem; /* Adds padding inside the button */
+    cursor: pointer; /* Changes the cursor to pointer when hovering over the button */
+    transition: background-color 0.3s ease; /* Adds smooth transition for background color change */
+    font-size: 1rem; /* Sets the font size of the button text */
+    display: block; /* Displays the button as a block element */
+    margin: 1rem auto 0; /* Adds margin to center the button horizontally and space it from other elements */
+}
+
+#back-to-cart:hover {
+    background-color: #d32f2f; /* Changes the button background color on hover */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #checkout-form {
+        width: 90%; /* Set the checkout form width to 90% on screens smaller than 768px */
+    }
+}
+
+#back-to-cart:hover {
+    background-color: #d32f2f; /* Change the background color of the back-to-cart button on hover */
+}
+
+.product h3 {
+    font-size: 1rem; /* Set the font size of the product title */
+    margin-bottom: 1rem; /* Add margin below the product title */
+    text-align: center; /* Center the product title */
+    height: 1em; /* Set a fixed height for the product title */
+    overflow: hidden; /* Hide any overflowed content */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Limit the title to 5 lines */
+    -webkit-box-orient: vertical;
+}
+
+/* Small Phones */
+@media (min-width: 0) and (max-width: 425px) {
+    .product {
+        width: calc(45% - 2rem); /* Set the product width for small phones */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 1rem; /* Add spacing between product rows */
+        padding: 1rem; /* Add padding inside the product box */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow to the product box */
+        border-radius: 10px; /* Round the corners of the product box */
+        background-color: #fff; /* Set the background color to white */
+        height: 100%; /* Ensure all product boxes have the same height */
+    }
+
+    #checkout-form {
+        width: 90%; /* Set the checkout form width to 90% */
+        margin: 0 auto; /* Center the checkout form */
+    }
+    
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem; /* Add gap between products */
+    }
+
+    .product img {
+        max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+        max-height: 200px; /* Limit the image height */
+        height: auto; /* Adjust the height automatically */
+        display: block;
+        margin: 0 auto 1rem auto; /* Center the image and add margin below it */
+        object-fit: contain; /* Ensure the image fits within the defined area */
+    }
+
+    .product h3 {
+        font-size: 1rem; /* Set the font size of the product title */
+        margin-bottom: 1rem; /* Add margin below the title */
+        text-align: center; /* Center the product title */
+        height: 9em; /* Set a fixed height for the product title */
+        overflow: hidden; /* Hide any overflowed content */
+        text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+        display: -webkit-box;
+        -webkit-line-clamp: 10; /* Limit the title to 10 lines */
+        -webkit-box-orient: vertical;
+    }
+
+    .price-container {
+        display: flex;
+        justify-content: center; /* Center the price horizontally */
+        align-items: center; /* Center the price vertically */
+        height: 2rem; /* Set a fixed height for the price container */
+        margin-bottom: 1rem; /* Add margin below the price */
+    }
+
+    .product p.price {
+        font-size: 1.1rem; /* Set the font size of the price */
+        font-weight: bold; /* Make the price bold */
+        margin: 0; /* Remove default margin */
+        line-height: 2rem; /* Align the price text vertically */
+    }
+
+    .product button {
+        width: 100%; /* Make the button take the full width of its container */
+        text-align: center; /* Center the button text */
+        background-color: #4CAF50; /* Set the button background color to green */
+        color: white; /* Set the button text color to white */
+        border: none; /* Remove the default button border */
+        border-radius: 50px; /* Round the corners of the button */
+        padding: 0.75rem 1.5rem; /* Add padding inside the button */
+        cursor: pointer; /* Change the cursor to pointer on hover */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+        margin-top: 1rem; /* Add margin above the button */
+    }
+}
+
+/* Responsive Design for Bigger Phones */
+@media (min-width: 426px) and (max-width: 600px) {
+    .product {
+        width: calc(45% - 2rem); /* Set the product width for bigger phones */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 1rem; /* Add spacing between product rows */
+        padding: 1rem; /* Add padding inside the product box */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow to the product box */
+        border-radius: 10px; /* Round the corners of the product box */
+        background-color: #fff; /* Set the background color to white */
+        height: 100%; /* Ensure all product boxes have the same height */
+    }
+
+    #checkout-form {
+        width: 90%; /* Set the checkout form width to 90% */
+        margin: 0 auto; /* Center the checkout form */
+    }
+    
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem; /* Add gap between products */
+    }
+
+    .product img {
+        max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+        max-height: 200px; /* Limit the image height */
+        height: auto; /* Adjust the height automatically */
+        display: block;
+        margin: 0 auto 1rem auto; /* Center the image and add margin below it */
+        object-fit: contain; /* Ensure the image fits within the defined area */
+    }
+
+    .product h3 {
+        font-size: 1rem; /* Set the font size of the product title */
+        margin-bottom: 1rem; /* Add margin below the title */
+        text-align: center; /* Center the product title */
+        height: 6em; /* Set a fixed height for the product title */
+        overflow: hidden; /* Hide any overflowed content */
+        text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+        display: -webkit-box;
+        -webkit-line-clamp: 5; /* Limit the title to 5 lines */
+        -webkit-box-orient: vertical;
+    }
+
+    .price-container {
+        display: flex;
+        justify-content: center; /* Center the price horizontally */
+        align-items: center; /* Center the price vertically */
+        height: 2rem; /* Set a fixed height for the price container */
+        margin-bottom: 1rem; /* Add margin below the price */
+    }
+
+    .product p.price {
+        font-size: 1.1rem; /* Set the font size of the price */
+        font-weight: bold; /* Make the price bold */
+        margin: 0; /* Remove default margin */
+        line-height: 2rem; /* Align the price text vertically */
+    }
+
+    .product button {
+        width: 100%; /* Make the button take the full width of its container */
+        text-align: center; /* Center the button text */
+        background-color: #4CAF50; /* Set the button background color to green */
+        color: white; /* Set the button text color to white */
+        border: none; /* Remove the default button border */
+        border-radius: 50px; /* Round the corners of the button */
+        padding: 0.75rem 1.5rem; /* Add padding inside the button */
+        cursor: pointer; /* Change the cursor to pointer on hover */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+        margin-top: 1rem; /* Add margin above the button */
+    }
+}
+
+/* Hamburger Menu Styles */
+.hidden {
+    display: none; /* Hide elements with this class */
+}
+
+nav .fas {
+    display: none; /* Hide FontAwesome icons in the navigation bar by default */
+}
+
+nav ul {
+    display: flex; /* Display the navigation links as a flexbox */
+    align-items: center; /* Center the items vertically */
+    justify-content: center; /* Center the items horizontally */
+    flex-wrap: wrap; /* Allow the items to wrap to the next line if needed */
+}
+
+.hamburger {
+    display: block; /* Show the hamburger menu button */
+}
+
+@media only screen and (max-width: 600px) {
+    nav .fas {
+        display: block; /* Show the FontAwesome icon for the hamburger menu on small screens */
+        font-size: 25px; /* Set the size of the hamburger icon */
+        color: white; /* Set the icon color to white */
+        position: fixed; /* Position the icon fixed on the screen */
+        right: 5px; /* Set the right margin */
+        top: 10px; /* Set the top margin */
+        cursor: pointer; /* Change the cursor to pointer on hover */
+        z-index: 2; /* Ensure the icon is above other elements */
+        margin-top: 5px; /* Add margin above the icon */
+    }
+
+    nav ul {
+        background: rgba(76, 175, 80, 0.9); /* Set the background color and transparency */
+        position: fixed; /* Fix the position on the screen */
+        top: -20px; /* Set the top position */
+        right: -150px; /* Set the right position */
+        width: 150px; /* Set the width */
+        padding-top: 40px; /* Add padding at the top */
+        flex-direction: column; /* Arrange the items in a column */
+        align-items: flex-start; /* Align the items to the start of the flexbox */
+        transition: 0.5s; /* Add a transition effect */
+        z-index: 1; /* Ensure the navigation menu is above other elements */
+    } 
+
+    nav ul li {
+        display: block; /* Display the list items as blocks */
+        margin: 25px; /* Add margin around the list items */
+        font-family: 'Poppins'; /* Set the font family for the list items */
+    }
+
+    nav ul li.close-icon {
+        position: absolute; /* Position the close icon absolutely */
+        top: 20px; /* Set the top position */
+        left: 20px; /* Set the left position */
+        display: none; /* Hide the close icon */
+        cursor: pointer; /* Change the cursor to pointer on hover */
+        z-index: 3; /* Ensure the close icon is above other elements */
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    nav ul {
+        flex-direction: row; /* Arrange the navigation items in a row on larger screens */
+    }
+}
+
+.cart-count-hamburger {
+    position: absolute; /* Position the cart count absolutely */
+    top: -5px; /* Set the top position */
+    right: -5px; /* Set the right position */
+    color: white; /* Set the text color to white */
+    border-radius: 50%; /* Round the corners to make it a circle */
+    width: 20px; /* Set the width */
+    height: 20px; /* Set the height */
+    display: flex; /* Display as a flexbox */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    font-size: 12px; /* Set the font size */
+}
+
+.cart-count {
+    color: white; /* Set the text color to white */
+    background-color: red; /* Set the background color to red */
+    border-radius: 50%; /* Round the corners to make it a circle */
+    width: 20px; /* Set the width */
+    height: 20px; /* Set the height */
+    display: inline-flex; /* Display as an inline flexbox */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    font-size: 12px; /* Set the font size */
+    position: relative; /* Position relative to its parent element */
+    margin-left: -5px; /* Adjust the left margin */
+    top: 0%; /* Set the top position */
+    transform: translateY(-50%); /* Center the content vertically */
+}
+
+#cart-link, #cart-link-hamburger {
+    position: relative; /* Ensure the cart link is positioned */
+}
+
+.cart-count.empty, .cart-count-hamburger.empty {
+    display: none; /* Hide the cart count when it's empty */
+}
+
+.cart-count.not-empty, .cart-count-hamburger.not-empty {
+    background-color: red; /* Set the background color to red when there are items */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50; /* Set the footer background color to green */
+    color: white; /* Set the footer text color to white */
+    text-align: center; /* Center the footer text */
+    padding: 1rem 0; /* Add padding to the footer */
+    margin-top: 2rem; /* Add margin above the footer */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Make the footer full width */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 1rem; /* Set the font size for the footer text */
+}
+
+#whatsapp-contact {
+    position: fixed; /* Fix the position on the screen */
+    bottom: 20px; /* Set the bottom position */
+    right: 20px; /* Set the right position */
+    z-index: 1000; /* Ensure the WhatsApp button is above other elements */
+    display: none; /* Initially hide the WhatsApp button */
+}
+
+#whatsapp-contact a {
+    display: flex; /* Display as a flexbox */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+    background-color: #25D366; /* Set the background color to WhatsApp green */
+    color: white; /* Set the text color to white */
+    text-decoration: none; /* Remove text underline */
+    padding: 10px 20px; /* Add padding to the link */
+    border-radius: 5px; /* Round the corners */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease; /* Add a smooth background color transition */
+}
+
+#whatsapp-contact a:hover {
+    background-color: #128C7E; /* Change the background color on hover */
+}
+
+.whatsapp-icon {
+    margin-right: 10px; /* Add margin to the right of the WhatsApp icon */
+    font-size: 20px; /* Set the font size of the WhatsApp icon */
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    #whatsapp-contact {
+        display: block; /* Show the WhatsApp button on smaller screens */
+    }
+    
+    #whatsapp-contact a {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed; /* Fix the notification on the screen */
+    top: 85%; /* Set the top position */
+    left: 50%; /* Center the notification horizontally */
+    transform: translate(-50%, -50%); /* Center the notification vertically */
+    background-color: #28a745; /* Set the background color to green */
+    color: white; /* Set the text color to white */
+    padding: 10px 20px; /* Add padding inside the notification */
+    border-radius: 5px; /* Round the corners of the notification */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow to the notification */
+    z-index: 1000; /* Ensure the notification is above other elements */
+    opacity: 0; /* Make the notification transparent */
+    visibility: hidden; /* Hide the notification */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition for opacity and visibility */
+    transform: translate(-50%, -60%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with transparent */
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1; /* End with fully visible */
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1; /* Start with fully visible */
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 0; /* End with transparent */
+        transform: translate(-50%, -60%);
+    }
+}
+
+.notification.show {
+    visibility: visible; /* Show the notification */
+    opacity: 1; /* Make the notification opaque */
+    animation: fadeIn 0.5s ease-out forwards, fadeOut 1s ease-out 2.5s forwards; /* Animate the notification */
+}
+
+

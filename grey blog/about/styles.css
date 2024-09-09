@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use a clean, sans-serif font for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    color: #333; /* Default text color */
+    background-color: #f4f4f4; /* Light grey background color for a clean look */
+}
+
+/* Container */
+.container {
+    max-width: 1200px; /* Max width to keep content readable */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+/* About Section */
+#about {
+    padding: 60px 0; /* Vertical padding for spacing */
+    background-color: #ffffff; /* White background for the about section */
+    text-align: center; /* Center-align text */
+}
+
+#about h1 {
+    font-size: 2.5em; /* Large heading font size */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: bold; /* Bold text */
+}
+
+#about p {
+    font-size: 1.2em; /* Slightly larger font size for paragraph */
+    line-height: 1.6; /* Increase line height for readability */
+    color: #555; /* Slightly lighter text color for paragraphs */
+    max-width: 800px; /* Limit paragraph width for better readability */
+    margin: 0 auto 30px; /* Center align and add space below */
+}
+
+/* Founder Section */
+.founder {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    gap: 20px; /* Space between elements */
+    margin-bottom: 60px; /* Space below the section */
+}
+
+.founder img {
+    border-radius: 50%; /* Circular image */
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    border: 4px solid #4CAF50; /* Green border around image */
+    object-fit: cover; /* Cover the image area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.founder .info {
+    max-width: 800px; /* Limit width of text block */
+    text-align: center; /* Center align text */
+}
+
+.founder .info h2 {
+    color: #4CAF50; /* Green color for subheading */
+    font-size: 2.2em; /* Large font size */
+    margin-bottom: 15px; /* Space below the heading */
+    font-weight: 600; /* Semi-bold text */
+}
+
+.founder .info p {
+    font-size: 1.1em; /* Slightly larger font size for paragraph */
+    line-height: 1.6; /* Increase line height for readability */
+    color: #555; /* Slightly lighter text color */
+    margin: 0 auto; /* Center align and remove vertical margin */
+}
+
+/* Team Section */
+.team {
+    padding: 60px 0; /* Vertical padding for spacing */
+    background-color: #f9f9f9; /* Light grey background for contrast */
+}
+
+.team h2 {
+    color: #4CAF50; /* Green color for section heading */
+    font-size: 2.5em; /* Large font size */
+    margin-bottom: 30px; /* Space below the heading */
+    font-weight: 600; /* Semi-bold text */
+}
+
+.team-members {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align items horizontally */
+    gap: 30px; /* Space between team members */
+    flex-wrap: wrap; /* Wrap items if needed */
+}
+
+.team-member {
+    background: #fff; /* White background for each team member card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Add padding inside the card */
+    text-align: center; /* Center align text */
+    max-width: 300px; /* Limit card width */
+    margin-bottom: 20px; /* Space below each card */
+}
+
+.team-member img {
+    border-radius: 50%; /* Circular image */
+    width: 120px; /* Fixed width */
+    height: 120px; /* Fixed height */
+    border: 3px solid #4CAF50; /* Green border around image */
+    object-fit: cover; /* Cover the image area */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.team-member h3 {
+    color: #4CAF50; /* Green color for team member names */
+    font-size: 1.6em; /* Larger font size */
+    margin-bottom: 10px; /* Space below the name */
+    font-weight: 600; /* Semi-bold text */
+}
+
+.team-member p {
+    font-size: 1em; /* Normal font size */
+    color: #555; /* Slightly lighter text color */
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px; /* Vertical padding for spacing */
+    background-color: #ffffff; /* White background */
+    text-align: center; /* Center align text */
+}
+
+#contact h2 {
+    color: #4CAF50; /* Green color for heading */
+    font-size: 2.2em; /* Large font size */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: 600; /* Semi-bold text */
+}
+
+#contact p {
+    font-size: 1.2em; /* Slightly larger font size for paragraphs */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+#contact a {
+    color: #4CAF50; /* Green color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold text for links */
+}
+
+#contact a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #about p {
+        font-size: 1.1em; /* Adjust font size for smaller screens */
+    }
+
+    .team-members {
+        flex-direction: column; /* Stack team members vertically */
+        align-items: center; /* Center align team members */
+    }
+
+    .team-member {
+        margin: 10px 0; /* Add vertical margin */
+        max-width: 90%; /* Limit width on smaller screens */
+    }
+}
+
+/* Back Button Styling */
+.back-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+.back-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease;
+}
+
+#back-button:hover, #back-buttons:hover{
+    background-color: #45a049;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gladyreigh Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/user.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/4d1e11eaa9.js" crossorigin="anonymous"></script> 
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Gladyreigh Portfolio Website">
+    <meta property="og:description" content="Hi, I'm Gladyreigh Dela Cruz, a passionate and dedicated student currently pursuing a BSc in Computer Science. Explore my portfolio to see my work and skills in software engineering, web development, and more.">
+    <meta property="og:image" content="http://grey.byethost3.com/images/user.png">
+    <meta property="og:url" content="http://grey.byethost3.com">
+    <meta property="og:type" content="website">
+    <style>
+        /* Back to Shop Button Styles */
+        .back-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff; /* Change as needed */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 16px;
+            z-index: 1000; /* Ensure it stays on top of other elements */
+        }
+
+        .back-btn:hover {
+            background-color: #0056b3; /* Darker shade for hover effect */
+        }
+
+        .back-btn i {
+            margin-right: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>G<span>ladyreigh.</span><br></h1> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>  
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="../">Shop</a></li>
+                    <i class="fas fa-times" onClick="closemenu()"></i>
+                </ul >
+                <i class="fas fa-bars" onClick="openmenu()"></i>
+            </nav> 
+            <div class="header-text"> 
+                <p>Software Engineer & UI/UX Designer</p>
+                <h2>Hi, I'm <span>Gladyreigh</span><br> from the Philippines</h2>   
+            </div>
+        </div>
+    </div> 
+
+<!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="Gladyreigh">
+            </div>
+            <div class="about-col-2">
+                <h3 class="sub-title">About Me</h3>
+                <p>Experienced software engineer with a strong background in full-stack development and mobile hardware repair. Currently based in Dubai, UAE, I am seeking opportunities to apply my skills in a dynamic environment where I can continue to grow and contribute to impactful projects.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p> 
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>  
+                    <p class="tab-links" onclick="openTab('projects')">Projects</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Technical Skills</span><br>
+                            <ul>
+                                <li><strong>Tools:</strong> MS Visual Studio, RAD Studio, Android Studio, GitHub, MS Word, MS Excel, MS PowerPoint, Notepad, Browser</li>
+                                <li><strong>Languages:</strong> JavaScript (JS), Java, Python, C++, C#, VB, PHP, CSS, HTML</li>
+                                <li><strong>Database Management:</strong> MySQL, SQL, Firebase, Oracle, MS Access</li>
+                                <li><strong>Cloud-Based Technologies:</strong> AWS, MS Azure</li>
+                                <li><strong>Research and Planning:</strong> Identifying Problems, Gathering Information, Calculating Results</li>
+                            </ul>
+                        </li>
+                        <li><span>Soft Skills</span><br>
+                            <ul>
+                                <li>Communication</li>
+                                <li>Teamwork</li>
+                                <li>Flexibility</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Developer (2017 - Present)</span><br>Specializes in full-stack web development using JavaScript, Node.js, and ReactJS. Performs freelance work in spare time, maintaining flexibility in work schedule. Sells services through referrals and platforms.</li>
+                        <li><span>Mobile Software and Hardware Repair (2022 - Present)</span><br>Resolves mobile software issues and performs hardware repairs including motherboards, LCDs, batteries, and other components. Provides expert technical support for mobile device troubleshooting.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Sc. in Computer Science, University of London, Goldsmiths (2023 - Present)</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>E-commerce Website - PhoneSale (2024)</span><br>Developed a full-fledged e-commerce platform using ReactJS for the frontend and Node.js for the backend. Integrated multiple APIs for payment processing and product management. Implemented responsive design and SEO optimization.</li>
+                        <li><span>2D Platformer Game (2023)</span><br>Programmed a 2D platformer game using JavaScript and HTML5 canvas. Designed game levels, character movement, and added features such as score tracking and power-ups.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<!-- Services Section -->
+<div id="services">
+    <div class="container">
+        <h2 class="sub-title">My Services</h2> 
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>   
+                <h2>Web Design</h2>
+                <p>Create visually appealing and user-friendly websites tailored to client needs.</p>
+                <a href='#'>Learn More</a>
+            </div>
+            <div> 
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Design intuitive user interfaces and engaging user experiences for web and mobile applications.</p>
+                <a href='#'>Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Develop robust and feature-rich mobile applications for Android and iOS.</p>
+                <a href='#'>Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Section -->
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="E-commerce Website - PhoneSale">
+                <div class="layer"> 
+                    <h3>E-commerce Website - PhoneSale</h3>
+                    <p>Technologies: ReactJS, Node.js, APIs, CSS.</p>
+                    <p>Features: Payment processing, user authentication, responsive design, SEO optimization.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="2D Platformer Game">
+                <div class="layer">
+                    <h3>2D Platformer Game</h3>
+                    <p>Technologies: JavaScript, HTML5 Canvas.</p>
+                    <p>Features: Game levels, character movement, score tracking, power-ups.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title">Contact Me</h2>
+                <p><i class="fas fa-paper-plane"></i>greygladyreigh@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+971566053401</p>
+                <div class="social-icons"> 
+                    <a href="https://facebook.com/greyhoven/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/greyhoven/"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/greyhoven/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/gladyreigh/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="cv/Gladyreigh%20CV%20-%20July%202024.pdf" download class="btn btn2">Download CV</a>  
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required> 
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Gladyreigh. All rights reserved.</p>
+    </div>
+</div>
+
+<!-- Back to Shop Button -->
+<a href="../" id="back-to-shop" class="back-btn">
+    <i class="fas fa-shopping-cart"></i> Back to Shop
+</a>
+
+<!-- JavaScript for Tab Functionality -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function openTab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");      
+        }
+            
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");        
+        }
+        
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-- JavaScript for Side Menu -->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+     
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<!-- JavaScript for Form Submission -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxSH62iZ5M4HjnWI_zmtfqG2GOU4NOKZ2pF8vlWdNqiBHT_7Z7Rt0hJFpHn9R1QpNyG/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<!-- JavaScript for Back to Shop Button Visibility -->
+<script>
+    window.addEventListener('scroll', function() {
+        const backToShopBtn = document.getElementById('back-to-shop');
+        if (window.scrollY > 0) { // Show button if scrolled more than 100px
+            backToShopBtn.style.display = 'block';
+        } else {
+            backToShopBtn.style.display = 'block';
+        }
+    });
+</script>
+</body>
+</html>

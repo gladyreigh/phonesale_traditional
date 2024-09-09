@@ -1,0 +1,116 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the entire page */
+    background-color: #f4f4f4; /* Light gray background color for a neutral look */
+    color: #333; /* Dark gray text color for readability */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color for contrast */
+    text-align: center; /* Center-aligns the header text */
+    padding: 1rem 0; /* Adds vertical padding */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for a slight lift effect */
+}
+
+/* Main content styling */
+main {
+    padding: 2rem; /* Adds padding around the main content */
+    max-width: 600px; /* Limits the maximum width for readability */
+    margin: 0 auto; /* Centers the main content horizontally */
+}
+
+/* Notice section styling */
+#notice {
+    background-color: #e8f5e9; /* Light green background for visibility */
+    color: #4CAF50; /* Darker green text color for contrast */
+    padding: 1rem; /* Adds padding inside the notice section */
+    border-left: 5px solid #4CAF50; /* Bold left border for emphasis */
+    border-radius: 4px; /* Rounds the corners */
+    text-align: center; /* Centers the text */
+    margin-bottom: 2rem; /* Adds space below the notice section */
+    font-weight: bold; /* Makes the text bold */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds a subtle shadow for lift effect */
+}
+
+/* Contact form styling */
+#contact-form {
+    background: white; /* White background for the form */
+    padding: 2rem; /* Adds padding inside the form */
+    border-radius: 8px; /* Rounds the corners of the form */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* More pronounced shadow for depth */
+}
+
+/* Heading styling */
+h2 {
+    text-align: center; /* Centers the heading text */
+    color: #4CAF50; /* Green text color to match the theme */
+    margin-bottom: 1rem; /* Adds space below the heading */
+}
+
+/* Label styling */
+label {
+    display: block; /* Makes labels block-level elements */
+    margin: 0.5rem 0 0.2rem; /* Adds vertical margin */
+    font-weight: bold; /* Makes label text bold */
+}
+
+/* Input and textarea styling */
+input, textarea {
+    width: 100%; /* Makes input and textarea elements full-width */
+    padding: 0.75rem; /* Adds padding inside the elements */
+    margin-bottom: 1rem; /* Adds space below the elements */
+    border: 1px solid #ddd; /* Light gray border for a clean look */
+    border-radius: 4px; /* Rounds the corners */
+}
+
+/* Textarea specific styling */
+textarea {
+    resize: vertical; /* Allows vertical resizing only */
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color for contrast */
+    padding: 0.7rem 1.5rem; /* Adds padding inside the button */
+    border: none; /* Removes default border */
+    border-radius: 4px; /* Rounds the corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 1rem; /* Sets the font size */
+    margin-top: 1rem; /* Adds space above the button */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049; /* Darker green background on hover */
+}
+
+/* Button container styling */
+#buttonContainer {
+    display: flex; /* Uses flexbox layout */
+    justify-content: space-between; /* Spaces out buttons evenly */
+}
+
+/* Specific style for the back button */
+#backButton {
+    background-color: #4CAF50; /* Same color as theme */
+}
+
+/* Back button hover effect */
+#backButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Specific style for the submit button */
+button[type="submit"] {
+    background-color: #4CAF50; /* Same color as theme */
+}
+
+/* Submit button hover effect */
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
